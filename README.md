@@ -5,7 +5,7 @@ A web component that uppercases content.
 
 ## Demo
 
-[Check it live!](http://emiljohansson.github.io/x-tabs)
+[Check it live!](http://emiljohansson.github.io/x-caps)
 
 Or [download as ZIP](https://github.com/emiljohansson/x-caps/archive/master.zip).
 
@@ -20,7 +20,7 @@ Or [download as ZIP](https://github.com/emiljohansson/x-caps/archive/master.zip)
 2. Import Custom Element:
 
     ```html
-    <link rel="import" href="bower_components/my-repo/dist/my-element.html">
+    <link rel="import" href="bower_components/emiljohansson/dist/x-caps.html">
     ```
 
 3. Start using it!
@@ -43,7 +43,7 @@ Event         | Description
 
 ## History
 
-For detailed changelog, check [Releases](https://github.com/my-user/my-repo/releases).
+For detailed changelog, check [Releases](https://github.com/emiljohansson/x-caps/releases).
 
 ## License
 

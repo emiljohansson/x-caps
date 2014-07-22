@@ -5,11 +5,9 @@
  * @class x-caps
  */
 -->
-<polymer-element name="x-caps" attributes="content">
+<polymer-element name="x-caps" attributes="value">
   <template>
-    <input on-keyup="{{onKeyUp}}" value="{{content}}"/>
-    <br />
-    {{content}}
+    {{value}}
   </template>
   <script>
     Polymer('x-caps', {
@@ -20,13 +18,10 @@
        * @type string
        * @default ''
        */
-      content: 'HI',
+      value: 'HI',
 
-      /**
-       * Converts content to upper case.
-       */
-      onKeyUp: function() {
-        this.content = this.content.toUpperCase();
+      valueChanged: function() {
+        this.value = this.value.toUpperCase();
       }
     });
   </script>

@@ -1,0 +1,33 @@
+<!--
+/**
+ * x-caps uppcases the text content.
+ *
+ * @class x-caps
+ */
+-->
+<polymer-element name="x-caps" attributes="content">
+  <template>
+			<input on-keyup="{{onKeyUp}}" value="{{content}}"/>
+			<br />
+      {{content}}
+  </template>
+  <script>
+    Polymer('x-caps', {
+      /**
+       * Text content of the tag.
+       *
+       * @attribute name
+       * @type string
+       * @default ''
+       */
+      content: 'hi',
+
+			/**
+			 * Converts content to upper case.
+			 */
+			onKeyUp: function() {
+				this.content = this.content.toUpperCase();
+			}
+    });
+  </script>
+</polymer-element>
